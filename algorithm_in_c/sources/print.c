@@ -270,7 +270,7 @@ void print_screen(void)
 
 void print_formula(void)
 {
-    char temp_string[17];
+    char temp_string[64];
 
     for (int i = 0; i < formula_count; i++)
     {

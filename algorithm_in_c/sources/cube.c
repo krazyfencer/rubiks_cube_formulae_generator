@@ -85,7 +85,8 @@ void cube_init(void)
 	}
 
 	printf("\n Shuffle cube?[y/n]: ");
-	scanf(" %c", &stub_cube);
+	while ( scanf(" %c", &stub_cube) < 1 )
+	  ;
 
 	if (stub_cube == 'y')
 	{
@@ -2004,7 +2005,7 @@ static void add_formula(char *formula_new, char *description)
 
 static void apply_formula(void)
 {
-	char temp_step[3];
+	char temp_step[4];
 	for (int i = 0; (i < CURRENT_FORMULA.step_count - 1) || (i == 0); i++)
 	{
 

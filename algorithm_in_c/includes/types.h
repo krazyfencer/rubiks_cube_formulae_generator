@@ -48,7 +48,7 @@ typedef struct colour_count_t
 
 typedef struct step_t
 {
-	char step[3];
+	char step[4];
 } step_t;
 
 typedef struct formula_t
